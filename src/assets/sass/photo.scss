@@ -1,0 +1,98 @@
+// Variables
+//@import "../variables";
+//@import "../mixins";
+section{
+
+  &.photos {
+	&::before, &::after {
+	  content: " ";
+	  display: table;
+	}
+	.card-body,.preview-photos {
+	  &::before, &::after {
+		content: " ";
+		display: table;
+	  }
+	}
+	background: transparent;
+	border: none;min-height: 0px;padding: 0px;
+	.preview-photos {
+
+	  .photo,.dz-preview {
+		min-height: 100px;
+		border-bottom: 1px solid #cdcdcd;
+		margin-bottom: 5px;
+		&:first-child, &:last-child{
+		  margin-left: 0px;
+		}
+		&:last-child{
+		  margin-left: 0px;
+		}
+		position: relative;
+		.dz-image {
+		  border-radius: 2px;
+		  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+		  width: 80px;
+		  height: 80px;
+		  float: left;
+		  img {
+			width: 100%;
+			height: 100%;
+		  }
+		}
+		.dz-details, .dz-progress , .dz-error-message , .dz-success-mark , .dz-error-mark {
+		   margin-left: 100px;
+		}
+		.dz-success-mark , .dz-error-mark {
+		  svg {
+			display: none;
+		  }
+
+		}
+		.dz-remove {
+		  border: 5px solid #ffffff;
+		  border-radius: 34px;
+		  background: #ffffff;
+		  padding: 5px;
+		  color: red;
+		  font-weight: bold;
+		  position: absolute;
+		  top: -15px;
+		  left: 66px;
+		}
+		.add-more-button {
+		  width: 100%;
+		  height: 100%;
+		  padding-top: 40%;
+		  background-color: #fafafa;
+		  border: none;
+		  color: #222222;
+		}
+	  }
+	}
+
+  }
+  &.picture {
+	.el-123456 {
+
+	 $desktop_image : 'http://dev-drupal.bicworld.com/sites/default/files/styles/max_325x325/public/2017-02/Quality_Safety_background-1.jpg?itok=tFCQHs-7';
+	 $tablet_image : 'http://dev-drupal.bicworld.com/sites/default/files/styles/max_325x325/public/2017-02/Quality_Safety_background-1.jpg?itok=tFCQHs-7';
+	 $tablet_retina_image : 'http://dev-drupal.bicworld.com/sites/default/files/styles/max_325x325/public/2017-02/Quality_Safety_background-1.jpg?itok=tFCQHs-7';
+	 $mobile_image : 'http://dev-drupal.bicworld.com/sites/default/files/styles/max_325x325/public/2017-02/Quality_Safety_background-1.jpg?itok=tFCQHs-7';
+	 $mobile_retina_image : 'http://dev-drupal.bicworld.com/sites/default/files/styles/max_325x325/public/2017-02/Quality_Safety_background-1.jpg?itok=tFCQHs-7';
+	  background-image: url($desktop_image);
+	  @include media('screen','<middle','retina'){
+		background-image: url($tablet_retina_image);
+	  }
+	  @include media('screen','<middle'){
+		background-image: url($tablet_image);
+	  }
+	  @include media('screen','<small','retina'){
+		background-image: url($mobile_retina_image);
+	  }
+	  @include media('screen','<small'){
+		background-image: url($mobile_image);
+	  }
+	}
+  }
+}

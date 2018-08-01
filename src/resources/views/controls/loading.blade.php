@@ -1,0 +1,1 @@
+<div class="backdrop"><div class="spinner"></div>'+'<span class="message">{{$message or 'Loading ...'}}</span></div>

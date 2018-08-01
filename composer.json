@@ -1,6 +1,6 @@
 {
   "name": "shuramita/article",
-  "description": "Article CMS management",
+  "description": "Laravel Article CMS management",
   "type": "library",
   "version": "1.0.0",
   "license": "OSL-3.0",
@@ -10,10 +10,19 @@
       "email": "minhtamtt@gmail.com"
     }
   ],
-  "require": {},
+  "require": {
+    "averspace/admin": "dev-master"
+  },
   "autoload": {
     "psr-4": {
       "Shuramita\\Article\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Shuramita\\Article\\ArticleServiceProvider"
+      ]
     }
   }
 }
