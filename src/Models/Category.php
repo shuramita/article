@@ -3,9 +3,11 @@
 namespace Shuramita\Article\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Averspace\Admin\Models\Category as AdminCategory;
 
-class Category extends Model
+class Category extends AdminCategory
 {
+
     protected $table = 'category';
 
     protected $hidden = [];
@@ -43,6 +45,7 @@ class Category extends Model
         $category = new Category();
         $category->name = $data['name'];
         $category->description = $data['description'];
+        $category->parent = $data['parent_id'];
         $category->save();
         return $category;
     }
@@ -54,5 +57,4 @@ class Category extends Model
         $category->update();
         return $category;
     }
-
 }

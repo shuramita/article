@@ -40,8 +40,11 @@ class ArticleServiceProvider extends ServiceProvider
         app('AdminNavigator')->registerSubNavigator(
             'article', new Item('Article','admin_list_articles','admin','fa-newspaper')
         );
+//        app('AdminNavigator')->registerSubNavigator(
+//            'article', new Item('Fuck','admin_list_fucks','admin','fa-newspaper')
+//        );
         app('AdminNavigator')->registerSubNavigator(
-            'article', new Item('Category','admin_list_categories','admin','fa-th-list')
+            'article', new Item('Category','admin_list_articles_categories','admin','fa-th-list')
         );
 
     }
