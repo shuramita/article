@@ -1,9 +1,9 @@
 <?php
 
-namespace Shuramita\Article\Models;
+namespace Shura\Article\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Averspace\Admin\Models\Category as AdminCategory;
+use Core\Admin\Models\Category as AdminCategory;
 
 class Category extends AdminCategory
 {

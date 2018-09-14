@@ -1,10 +1,10 @@
 <?php
-namespace Shuramita\Article\Controllers\API;
+namespace Shura\Article\Controllers\API;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Shuramita\Article\Controllers\Controller;
-use Shuramita\Article\Models\Category;
+use Shura\Article\Controllers\Controller;
+use Shura\Article\Models\Category;
 use Validator;
 class CategoryController extends Controller
 {

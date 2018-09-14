@@ -1,5 +1,5 @@
 {
-  "name": "shuramita/article",
+  "name": "shura/article",
   "description": "Laravel Article CMS management",
   "type": "library",
   "version": "1.0.0",
@@ -11,17 +11,17 @@
     }
   ],
   "require": {
-    "averspace/admin": "dev-master"
+    "core/admin": "dev-master"
   },
   "autoload": {
     "psr-4": {
-      "Shuramita\\Article\\": "src/"
+      "Shura\\Article\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Shuramita\\Article\\ArticleServiceProvider"
+        "Shura\\Article\\ArticleServiceProvider"
       ]
     }
   }

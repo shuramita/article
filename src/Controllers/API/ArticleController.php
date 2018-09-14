@@ -1,11 +1,11 @@
 <?php
 
-namespace Shuramita\Article\Controllers\API;
+namespace Shura\Article\Controllers\API;
 
 //use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Http\Request;
-use Shuramita\Article\Controllers\Controller;
-use Shuramita\Article\Models\Article;
+use Shura\Article\Controllers\Controller;
+use Shura\Article\Models\Article;
 use Validator;
 class ArticleController extends Controller
 {

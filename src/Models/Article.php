@@ -1,6 +1,6 @@
 <?php
 
-namespace Shuramita\Article\Models;
+namespace Shura\Article\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;

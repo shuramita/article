@@ -1,10 +1,10 @@
 <?php
-namespace Shuramita\Article\Controllers;
+namespace Shura\Article\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Shuramita\Article\Models\Article;
-use Shuramita\Article\Models\Category;
+use Shura\Article\Models\Article;
+use Shura\Article\Models\Category;
 
 class ArticleController extends Controller
 {

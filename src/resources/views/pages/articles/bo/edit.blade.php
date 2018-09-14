@@ -56,10 +56,10 @@
                         <div class="form-group">
                             <label for="article-name">{{__('Article Photos')}}</label>
                             @isset($article)
-                                @include('Article::controls.photo',['content'=>$article])
-                                @else
-                                    @include('Article::controls.photo')
-                                    @endisset
+                            @include('Article::controls.photo',['content'=>$article])
+                            @else
+                            @include('Article::controls.photo')
+                            @endisset
                         </div>
                     </div>
                 </div>

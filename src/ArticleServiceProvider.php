@@ -1,8 +1,8 @@
 <?php
 
-namespace Shuramita\Article;
+namespace Shura\Article;
 
-use Averspace\Admin\ViewComposers\Item;
+use Core\Admin\ViewComposers\Item;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Routing\Router;
 
